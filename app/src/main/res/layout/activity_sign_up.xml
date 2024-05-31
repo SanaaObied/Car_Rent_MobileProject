@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/txtReserve"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif-monospace"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="#44576D"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtaccount"
+        android:layout_width="197dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="35dp"
+        android:fontFamily="serif-monospace"
+        android:text="Creat new Account "
+        android:textAlignment="center"
+        android:textColor="#44576D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReserve" />
+
+    <TextView
+        android:id="@+id/txtFristName"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/account"
+        android:hint="  First Name"
+        android:textAlignment="textStart"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtLastName"
+        app:layout_constraintEnd_toStartOf="@+id/txtLastName"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundstyle"
+        android:hint="  Last Name"
+        android:textAlignment="textStart"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtFristName"
+        app:layout_constraintTop_toBottomOf="@+id/txtaccount" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/email"
+        android:hint="  Email"
+        android:textAlignment="textStart"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtxPhone"
+        app:layout_constraintEnd_toEndOf="@+id/txtxPhone"
+        app:layout_constraintStart_toStartOf="@+id/txtFristName"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+
+    <TextView
+        android:id="@+id/txtxPhone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/phone"
+        android:hint="  Phone Number"
+        android:textAlignment="textStart"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtDriver"
+        app:layout_constraintEnd_toEndOf="@+id/txtDriver"
+        app:layout_constraintStart_toStartOf="@+id/txtDriver"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <TextView
+        android:id="@+id/txtDriver"
+        android:layout_width="344dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/liscens_24"
+        android:hint="  Driver License"
+        android:textAlignment="textStart"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/RGender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtxPhone" />
+
+    <RadioGroup
+        android:id="@+id/RGender"
+        android:layout_width="336dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPass"
+        app:layout_constraintEnd_toEndOf="@+id/txtPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDriver">
+
+        <RadioButton
+            android:id="@+id/rBtnMale"
+            android:layout_width="124dp"
+            android:layout_height="35dp"
+            android:background="@drawable/roundstyle"
+            android:text="Male"
+            android:textColor="#44576D"
+            android:textColorHint="#44576D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rBtnfemale"
+            android:layout_width="123dp"
+            android:layout_height="35dp"
+            android:background="@drawable/roundstyle"
+            android:text="Female"
+            android:textColor="#44576D"
+            android:textColorHint="#44576D"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/pass"
+        android:hint="  Password"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPass2"
+        app:layout_constraintEnd_toEndOf="@+id/txtPass2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RGender" />
+
+    <TextView
+        android:id="@+id/txtPass2"
+        android:layout_width="338dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/pass"
+        android:hint="  Confirm Password"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="201dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="171dp"
+        android:backgroundTint="#6095b5"
+        android:text="Sign Up"
+        android:textColor="#44576D"
+        android:textColorHint="#44576D"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
