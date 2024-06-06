@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         // Set an OnClickListener on the Log In button
         btnLog.setOnClickListener(new View.OnClickListener() {
             @Override
+
             public void onClick(View v) {
                 // Create an Intent to start MainActivity2
                 Intent intent = new Intent(MainActivity.this, MainActivity2.class);

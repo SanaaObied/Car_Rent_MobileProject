@@ -40,6 +40,7 @@ public class SignUp extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
     }
     private void Show (){
         txtReserve = findViewById(R.id.txtReserve);

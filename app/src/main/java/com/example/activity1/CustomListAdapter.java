@@ -29,6 +29,7 @@ public class CustomListAdapter extends RecyclerView.Adapter<CustomListAdapter.Vi
         return new ViewHolder(view);
     }
 
+
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         if (position < carList.size()) {

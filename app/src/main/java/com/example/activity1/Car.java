@@ -109,6 +109,7 @@ public class Car {
                 ", Price=" + Price +
                 ", Transmissiontypes='" + Transmissiontypes + '\'' +
                 '}';
+
     }
     public static Car fromJson(JSONObject jsonObject) throws JSONException {
         int id = jsonObject.getInt("Id");
