@@ -25,6 +25,8 @@ import java.util.List;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.activity1.R;
+
 public class MainActivity7 extends AppCompatActivity {
     private Spinner spnMenu;
     private RecyclerView recyclerView;
