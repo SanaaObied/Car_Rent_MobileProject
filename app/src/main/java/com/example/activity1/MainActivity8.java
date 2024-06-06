@@ -30,7 +30,7 @@ public class MainActivity8 extends AppCompatActivity {
     private TextView txtPrice;
     private Button btnConfirm;
     private Button btnBack;
-    private static  final String BASE_URL="http://192.168.1.110/carreservation1/viewCar.php";
+    private static  final String BASE_URL="http://192.168.1.110/carreservation1/Car.php";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,15 +67,11 @@ public class MainActivity8 extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         try {
-                            JSONArray jsonArray = new JSONArray(response);
-                            if (jsonArray.length() > 0) {
-                                JSONObject jsonObject = jsonArray.getJSONObject(0);
-                                Car car = Car.fromJson(jsonObject);
+                            JSONObject jsonObject = new JSONObject(response);
+                            String brand = jsonObject.getString("Brand");
+                            String model = jsonObject.getString("Model");
+                            txtModel.setText(model);
 
-                                // Display the car's brand and model in the TextViews
-                                txtBrand.setText(car.getBrand());
-                                txtModel.setText(car.getModel());
-                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                             Toast.makeText(MainActivity8.this, "Error parsing data", Toast.LENGTH_LONG).show();
@@ -91,7 +87,5 @@ public class MainActivity8 extends AppCompatActivity {
 
         Volley.newRequestQueue(MainActivity8.this).add(stringRequest);
     }
-    public void fill(Car car){
 
-    }
 }
