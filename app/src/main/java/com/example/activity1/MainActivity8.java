@@ -70,7 +70,7 @@ public class MainActivity8 extends AppCompatActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             String brand = jsonObject.getString("Brand");
                             String model = jsonObject.getString("Model");
-                            txtModel.setText(model);
+
 
                         } catch (Exception e) {
                             e.printStackTrace();
