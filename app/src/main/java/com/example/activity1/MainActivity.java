@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
+import android.text.method.LinkMovementMethod;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
         // Find the Log In button by its ID
         Button btnLog = findViewById(R.id.btnLOG);
         Button btnsign = findViewById(R.id.btnSig);
+        TextView contactTextView = findViewById(R.id.textView2);
+        contactTextView.setMovementMethod(LinkMovementMethod.getInstance());
+
 
         // Set an OnClickListener on the Log In button
         btnLog.setOnClickListener(new View.OnClickListener() {

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Activity1</string>
+    <string name="contact_info">Rent Address: Abu-Falah, Ramallah<br/>Customer Support:<br/>Telephone: <a href="tel:972-592845459">972-592845459</a><br/>Email: <a href="mailto:EZRentCar@gmail.com">EZRentCar@gmail.com</a></string>
+
 </resources>

@@ -64,12 +64,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="Rent Address: Abu-Falah, Ramallah\nCustomer Support:\nTelephone: 972-592845459\nEmail: EZRentCar@gmail.com"
+        android:text="@string/contact_info"
         android:textSize="18sp"
         android:textStyle="bold"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:autoLink="email|phone" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
