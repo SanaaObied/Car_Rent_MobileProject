@@ -20,10 +20,8 @@ public class MainActivity2 extends AppCompatActivity {
         adminButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Perform action for admin button click
-                // For example, start AdminActivity
-             //  Intent intent = new Intent(MainActivity2.this, AdminActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity2.this, WelcomeAdmin.class);
+                startActivity(intent);
             }
         });
 
@@ -33,7 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
                 // Perform action for customer button click
                 // For example, start CustomerActivity
-               Intent intent = new Intent(MainActivity2.this, MainActivity8.class);
+                Intent intent = new Intent(MainActivity2.this, WelcomeCustomer.class);
                 startActivity(intent);
             }
         });

@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtReserve" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtFristName"
         android:layout_width="0dp"
         android:layout_height="48dp"
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toStartOf="@+id/txtLastName"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtLastName"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -77,7 +77,7 @@
         app:layout_constraintStart_toEndOf="@+id/txtFristName"
         app:layout_constraintTop_toBottomOf="@+id/txtaccount" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtEmail"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -92,10 +92,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txtxPhone"
         app:layout_constraintEnd_toEndOf="@+id/txtxPhone"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txtFristName"
         app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtxPhone"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -113,7 +114,7 @@
         app:layout_constraintStart_toStartOf="@+id/txtDriver"
         app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtDriver"
         android:layout_width="344dp"
         android:layout_height="0dp"
@@ -152,7 +153,7 @@
             android:layout_width="124dp"
             android:layout_height="35dp"
             android:background="@drawable/roundstyle"
-            android:text="Male"
+            android:text="M"
             android:textColor="#44576D"
             android:textColorHint="#44576D"
             android:textSize="16sp"
@@ -163,14 +164,14 @@
             android:layout_width="123dp"
             android:layout_height="35dp"
             android:background="@drawable/roundstyle"
-            android:text="Female"
+            android:text="F"
             android:textColor="#44576D"
             android:textColorHint="#44576D"
             android:textSize="16sp"
             android:textStyle="bold" />
     </RadioGroup>
 
-    <TextView
+    <EditText
         android:id="@+id/txtPass"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -189,7 +190,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RGender" />
 
-    <TextView
+    <EditText
         android:id="@+id/txtPass2"
         android:layout_width="338dp"
         android:layout_height="0dp"
