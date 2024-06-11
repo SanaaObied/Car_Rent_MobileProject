@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".WelcomeCustomer">
+
+    <TextView
+        android:id="@+id/txtWeclome1"
+        android:layout_width="349dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="112dp"
+        android:fontFamily="cursive"
+        android:text="Welcome Customer"
+        android:textAlignment="center"
+        android:textColor="#F1EDED"
+        android:textSize="45sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtname1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtname1"
+        android:layout_width="362dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/roundstyle"
+        android:drawableLeft="@drawable/acount2"
+        android:fontFamily="casual"
+        android:hint="  UserName"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtinvalidName1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeclome1" />
+
+    <EditText
+        android:id="@+id/edtTxtPAss"
+        android:layout_width="352dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/roundstyle"
+        android:drawableRight="@drawable/key"
+        android:fontFamily="casual"
+        android:hint="  Password"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtInvalidPass1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtinvalidName1" />
+
+    <Button
+        android:id="@+id/btnLogin1"
+        android:layout_width="207dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="#b3dcf5"
+        android:fontFamily="casual"
+        android:text="Login"
+        android:textColor="#0B0A0A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <TextView
+        android:id="@+id/txtinvalidName1"
+        android:layout_width="342dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="21dp"
+        android:textColor="#AE1111"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edtTxtPAss"
+        app:layout_constraintEnd_toEndOf="@+id/txtname1"
+        app:layout_constraintStart_toStartOf="@+id/txtname1"
+        app:layout_constraintTop_toBottomOf="@+id/txtname1" />
+
+    <TextView
+        android:id="@+id/txtInvalidPass1"
+        android:layout_width="323dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="87dp"
+        android:textColor="#BD1E1E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtPAss" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="183dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="10dp"
+        android:background="#154E71"
+        android:backgroundTint="#F0F4F6"
+        android:text="Remember Me"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInvalidPass1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

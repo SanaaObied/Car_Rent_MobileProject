@@ -23,7 +23,10 @@
             android:name=".MainActivity11"
             android:exported="false" />
         <activity
-            android:name=".MainActivity3"
+            android:name=".WelcomeCustomer"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeAdmin"
             android:exported="false" />
         <activity
             android:name=".MainActivity10"
