@@ -1,15 +1,18 @@
+// build.gradle.kts
+import com.android.build.gradle.BaseExtension
+
 plugins {
-    id("com.android.application")
+    id("com.android.application") version "7.0.0"
 }
 
 android {
-    namespace = "com.example.activity1"
     compileSdk = 34
+    buildToolsVersion = "30.0.3" // Adjust the version as needed
 
     defaultConfig {
-        applicationId = "com.example.activity1"
+        applicationId = "com.example.activity1" // Corrected 'namespace' to 'applicationId'
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 30 // Set the targetSdk version here
         versionCode = 1
         versionName = "1.0"
 
@@ -32,7 +35,6 @@ android {
 }
 
 dependencies {
-
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -41,7 +43,9 @@ dependencies {
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    implementation ("com.github.bumptech.glide:glide:4.12.0")
-    annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+    implementation("com.github.bumptech.glide:glide:4.12.0")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.12.0") // Use annotationProcessor for Glide's compiler
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
+
+
