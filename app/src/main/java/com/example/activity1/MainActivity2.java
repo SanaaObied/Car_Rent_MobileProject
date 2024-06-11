@@ -27,13 +27,14 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+
         customerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Perform action for customer button click
                 // For example, start CustomerActivity
-             //   Intent intent = new Intent(MainActivity2.this, CustomerActivity.class);
-              //  startActivity(intent);
+               Intent intent = new Intent(MainActivity2.this, MainActivity8.class);
+                startActivity(intent);
             }
         });
     }

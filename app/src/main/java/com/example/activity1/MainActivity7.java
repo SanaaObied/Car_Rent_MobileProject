@@ -59,6 +59,8 @@ public class MainActivity7 extends AppCompatActivity {
         setupSpinner();
     }
 
+
+
     private void setupSpinner() {
         Log.d(TAG, "Setting up spinner with URL: " + BASE_URL);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
